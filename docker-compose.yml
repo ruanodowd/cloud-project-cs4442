@@ -1,0 +1,37 @@
+#version: "3.7"
+#
+#services:
+#
+#  flask_service:
+#    build: ./notes_app
+#    container_name: notes_app
+#    restart: always
+#    environment:
+#      - APP_NAME=notes_app
+#    expose:
+#      - 5000
+#    ports:
+#      - "5000:5000"
+#
+
+
+
+version: '3'
+
+services:
+  web:
+    build: notes_app
+    ports:
+      - "80:5000"
+
+
+#(Get-ECRLoginCommand).Password | docker login --username AWS --password-stdin aws_account_id.dkr.ecr.region.amazonaws.com
+#  nginx_service:
+#    build: ./nginx
+#    container_name: nginx
+#    restart: always
+#    ports:
+#      - "80:80"
+#      - "443:443"
+#    depends_on:
+#      - web
