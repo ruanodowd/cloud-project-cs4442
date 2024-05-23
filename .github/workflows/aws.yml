@@ -31,7 +31,7 @@ on:
     branches: [ "main" ]
 
 env:
-  AWS_REGION: us_east_1                   # set this to your preferred AWS region, e.g. us-west-1
+  AWS_REGION: us-east-1                   # set this to your preferred AWS region, e.g. us-west-1
   ECR_REPOSITORY: 499487067027.dkr.ecr.us-east-1.amazonaws.com/notes_app           # set this to your Amazon ECR repository name
 #  ECS_SERVICE: MY_ECS_SERVICE                 # set this to your Amazon ECS service name
 #  ECS_CLUSTER: MY_ECS_CLUSTER                 # set this to your Amazon ECS cluster name
